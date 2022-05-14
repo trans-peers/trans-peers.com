@@ -69,7 +69,10 @@
 import FrontendLayout from "../Layouts/FrontendLayout";
 export default {
   name: "Register",
-  components: {FrontendLayout}
+  components: {FrontendLayout},
+  props: [
+      'type'
+  ]
 }
 </script>
 

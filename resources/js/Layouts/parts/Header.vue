@@ -2,11 +2,11 @@
   <nav class="relative bg-white border-b-2 border-gray-300 text-gray-900 sticky">
     <div class="absolute flag h-full w-400 max-w-400">&nbsp</div>
     <div class="container mx-auto flex justify-between">
-      <div class=" relative block p-4 lg:p-6 text-xl ml-12 font-bold">Transpeers.co.uk</div>
+      <div class=" relative block p-4 lg:p-6 text-xl ml-20 lg:ml-12 font-bold">Transpeers.co.uk</div>
       <ul class="flex">
-        <NavFixedLink :href="route('welcome')">Home</NavFixedLink>
-        <NavFixedLink :href="route('about')">About</NavFixedLink>
-        <NavFixedLink :href="route('contact')">Contact</NavFixedLink>
+        <NavFixedLink :href="route('welcome-page')">Home</NavFixedLink>
+        <NavFixedLink :href="route('about-page')">About</NavFixedLink>
+        <NavFixedLink :href="route('contact-page')">Contact</NavFixedLink>
 
       </ul>
     </div>

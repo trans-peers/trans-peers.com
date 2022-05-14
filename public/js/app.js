@@ -24216,7 +24216,8 @@ __webpack_require__.r(__webpack_exports__);
   name: "Register",
   components: {
     FrontendLayout: _Layouts_FrontendLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
-  }
+  },
+  props: ['type']
 });
 
 /***/ }),
@@ -26790,7 +26791,7 @@ var _hoisted_3 = {
 
 var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "relative block p-4 lg:p-6 text-xl ml-12 font-bold"
+    "class": "relative block p-4 lg:p-6 text-xl ml-20 lg:ml-12 font-bold"
   }, "Transpeers.co.uk", -1
   /* HOISTED */
   );
@@ -26810,7 +26811,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_NavFixedLink = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("NavFixedLink");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("nav", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavFixedLink, {
-    href: _ctx.route('welcome')
+    href: _ctx.route('welcome-page')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_6];
@@ -26821,7 +26822,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, 8
   /* PROPS */
   , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavFixedLink, {
-    href: _ctx.route('about')
+    href: _ctx.route('about-page')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_7];
@@ -26832,7 +26833,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, 8
   /* PROPS */
   , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavFixedLink, {
-    href: _ctx.route('contact')
+    href: _ctx.route('contact-page')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_8];

@@ -25,6 +25,7 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('welcome', [PageController::class, 'welcome'])->name('welcome-page');
 Route::get('about', [PageController::class, 'about'])->name('about-page');
 Route::get('contact', [PageController::class, 'contact'])->name('contact-page');
 Route::get('signup/{type}', [PageController::class, 'signup'])->name('signup-page');

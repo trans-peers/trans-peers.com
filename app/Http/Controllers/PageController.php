@@ -8,7 +8,7 @@ class PageController extends Controller
 {
     public function welcome()
     {
-        return inertia('welcome');
+        return inertia('Welcome');
     }
 
     public function about()
