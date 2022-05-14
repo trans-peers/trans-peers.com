@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -23,6 +24,10 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+Route::get('about', [PageController::class, 'about'])->name('about-page');
+Route::get('contact', [PageController::class, 'contact'])->name('contact-page');
+Route::get('signup/{type}', [PageController::class, 'signup'])->name('signup-page');
 
 Route::middleware([
     'auth:sanctum',

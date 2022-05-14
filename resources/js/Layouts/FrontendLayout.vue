@@ -1,8 +1,11 @@
 <template>
   <!-- Header including logo and mega menu -->
   <Header/>
-
-  <slot></slot>
+  <div class="bg-gray-100">
+    <main class="container mx-auto bg-white">
+      <slot></slot>
+    </main>
+  </div>
   <!-- Footer including the banners -->
   <Footer/>
 
