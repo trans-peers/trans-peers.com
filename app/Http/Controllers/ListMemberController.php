@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreListMemberRequest;
 use App\Http\Requests\UpdateListMemberRequest;
 use App\Models\ListMember;
+use Illuminate\Http\Request;
 
 class ListMemberController extends Controller
 {
@@ -23,9 +24,21 @@ class ListMemberController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $payload = $request->validate([
+            'list_id' => 'required|exists:lists,id',
+            'first' => 'required|string',
+            'last' => 'required|string',
+            'email' => 'required|email',
+        ]);
+
+        if (ListMember::create($payload))
+        {
+            return response()->redirect(back())->with('success', 'List Member Created Successfully');
+        }
+        return response()->redirect(back())->with('error', 'List Member Creation Failed');
+
     }
 
     /**
